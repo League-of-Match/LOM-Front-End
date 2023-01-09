@@ -122,16 +122,12 @@ export const StyledCard = styled.div`
     color: var(--color-grey-3);
   }
 
-  a{
-    color: var(--color-black-1);
-  }
-
-  .historic {
+  a {
     color: var(--color-grey-3);
     font-size: 12px;
   }
 
-  .historic:hover {
+  a:hover {
     text-decoration: underline;
   }
 

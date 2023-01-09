@@ -7,7 +7,6 @@ import { Footer } from "components/Footer/Footer";
 import { StyledMain } from "./StyledPlayers";
 import { InputBox } from "components/InputBox/InputBox";
 import { PlayerCard } from "components/PlayerCard/PlayerCard";
-import { Outlet } from "react-router-dom";
 
 export function Players() {
   const { players, getAllPlayers } = useContext(UserContext);
@@ -56,7 +55,6 @@ export function Players() {
         </StyledMain>
       </StyledContainerPlayers>
 
-      <Outlet/>
       <Footer />
     </>
   );
