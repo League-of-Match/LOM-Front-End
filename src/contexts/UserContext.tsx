@@ -63,8 +63,19 @@ export function UserProvider({ children }: iContextChildrenProps) {
   async function registerUser(data: iUserRegister) {
     try {
       const request = await api.post("/register", data);
+      
+      localStorage.setItem("@league-of-match: token", request.data.accessToken);
+      localStorage.setItem("@league-of-match: id", request.data.user.id);
+
+      setUser(request.data.user);
+
       toast.success("Usuário registrado com sucesso");
+      localStorage.setItem(
+        "@league-of-match: logged-user",
+        JSON.stringify(request.data)
+      );
       navigate("/players");
+      
     } catch (error) {
       toast.error("Registro não efetuado");
       console.log(error);

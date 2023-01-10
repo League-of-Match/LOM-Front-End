@@ -16,7 +16,8 @@ export const RegisterSchema = yup.object().shape({
   password: yup.string().required("Senha obrigatória para cadastro"),
   confirmPassword: yup
     .string()
-    .required("Confirmação de senha obrigatória para cadastro"),
+    .required("Confirmação de senha obrigatória para cadastro")
+    .oneOf([yup.ref("password")], "As senhas estão diferentes"),
   nickname: yup.string().required("Nome de usuário obrigatório para cadastro"),
   elo: yup.string().required("Elo obrigatório para cadastro"),
   route: yup.string().required("Rota obrigatória para cadastro"),
