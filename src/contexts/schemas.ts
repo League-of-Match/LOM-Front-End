@@ -26,15 +26,15 @@ export const RegisterSchema = yup.object().shape({
     .required("Campo obrigatório")
     .oneOf(
       [
-        "ferro",
-        "bronze",
-        "prata",
-        "ouro",
-        "platina",
-        "diamante",
-        "mestre",
-        "grão-mestre",
-        "desafiante"
+        "Ferro",
+        "Bronze",
+        "Prata",
+        "Ouro",
+        "Platina",
+        "Diamante",
+        "Mestre",
+        "Grão-mestre",
+        "Desafiante"
       ],
       "Elo obrigatório"
     ),
