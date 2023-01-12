@@ -1,6 +1,5 @@
 import { createGlobalStyle } from "styled-components";
 
-
 export const GlobalStyles = createGlobalStyle`
 
     html, body, div, span, applet, object, iframe,
@@ -32,6 +31,10 @@ export const GlobalStyles = createGlobalStyle`
         color: #ffffff;
     }
 
+    a {
+        text-decoration: none;
+    }
+    
     button {
         cursor: pointer;
         transition: 0.3s ease;
@@ -53,5 +56,39 @@ export const GlobalStyles = createGlobalStyle`
         --color-brand-4: #0D2818;
 
         --color-error: #ed4337
+    }
+
+    ::-webkit-scrollbar {
+      width: 10px;
+      height: 10px;
+    }
+    ::-webkit-scrollbar-button {
+      width: 0px;
+      height: 0px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #16db65;
+      border: 0px none #ffffff;
+      border-radius: 0px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #058c42;
+    }
+    ::-webkit-scrollbar-thumb:active {
+      background: #058c42;
+    }
+    ::-webkit-scrollbar-track {
+      background: #26262c;
+      border: 0px none #ffffff;
+      border-radius: 0px;
+    }
+    ::-webkit-scrollbar-track:hover {
+      background: #393a41;
+    }
+    ::-webkit-scrollbar-track:active {
+      background: #393a41;
+    }
+    ::-webkit-scrollbar-corner {
+      background: transparent;
     }
 `
