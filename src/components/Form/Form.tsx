@@ -4,10 +4,12 @@ import { StyledForm } from "./StyledForm";
 import { Link } from "react-router-dom";
 import { UserContext } from "contexts/UserContext";
 
-interface iFormProps{
-    children: React.ReactNode;
-    left?: boolean;
-    formTitle?: string;
+interface iFormProps {
+  children: React.ReactNode;
+  left?: boolean;
+  leftImg?: boolean;
+  formTitle?: string;
+  callback: () => void;
 }
 
 export function Form ({ children, formTitle, left, leftImg, callback }: iFormProps) {
