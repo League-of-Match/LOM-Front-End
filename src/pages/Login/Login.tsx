@@ -20,7 +20,7 @@ export function Login () {
         resolver: yupResolver(LoginSchema)
     });
     return (
-        <LoginPage className="animate__animated animate__fadeIn">
+        <LoginPage>
             <FormBG imageBG="login"/>
             <Form formTitle="Login" callback={handleSubmit(login)}>
                 <InputBox type="email" errors={errors.email?.message} label="Email" register={register("email")} />

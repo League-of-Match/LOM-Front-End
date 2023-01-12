@@ -4,7 +4,7 @@ import { StyledInputBox } from "./StyledInputBox";
 interface iInputBoxProps {
     type?: string;
     label: string;
-    errors?: any;
+    errors?: string;
     register?: object;
     value?: string;
     onChange?: React.ChangeEventHandler<HTMLInputElement>

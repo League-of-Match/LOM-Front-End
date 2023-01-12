@@ -16,7 +16,7 @@ import adc from "../assets/routeIcons/adc.svg";
 import jungle from "../assets/routeIcons/jungle.svg";
 import sup from "../assets/routeIcons/sup.svg";
 
-export const UserContext = createContext({} as iUserProviderValue);
+export const UserContext = createContext({} as iUserProviderValue)
 
 export function UserProvider ({ children }: iContextChildrenProps) {
   const navigate = useNavigate();
